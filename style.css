@@ -262,3 +262,77 @@ footer { margin-top:1rem; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior:auto !important; transition:none !important; }
 }
+
+
+/* ============================================================
+   Project images (Nov 2026)
+   Each image opens the original full-size file when clicked.
+   ============================================================ */
+.hero-photo img {
+  display: block;
+  width: 220px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center 25%;
+  background: #f4f4f4;
+  border: 1px solid var(--line);
+}
+.research-figure { margin: 0; }
+.media-link { display:block; position:relative; text-decoration: none; }
+.research-figure .media-link {
+  border: 1px solid var(--line);
+  overflow: hidden;
+  border-radius: 13px;
+  background: #fff;
+}
+.feature-media .research-figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 0;
+  display: block;
+  transition: transform .2s ease;
+}
+.research-figure .media-link:hover img { transform: scale(1.025); }
+.research-figure figcaption {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:.3rem .7rem;
+  margin-top: .55rem;
+  font-size: .77rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.view-full { color:var(--accent-dark); font-weight:600; white-space:nowrap; }
+.card-media { height:auto; width:100%; aspect-ratio:16 / 9; overflow:hidden; background:#edf2ee; }
+.card-media img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background: #fff;
+  transition: transform .24s ease;
+}
+.card-media:hover img { transform:scale(1.025); }
+.card-media-caption {
+  position:absolute;
+  left:0;right:0;bottom:0;
+  padding: .5rem .8rem;
+  display:flex;justify-content:space-between;align-items:center;gap:.7rem;
+  color:#fff;
+  background:linear-gradient(transparent,rgba(10,28,17,.78));
+  font-size:.7rem;
+  font-weight:600;
+  line-height:1.3;
+  text-shadow: 0 1px 4px rgba(0,0,0,.7);
+}
+.media-link:focus-visible { outline: 3px solid var(--accent); outline-offset:2px; }
+@media(max-width:760px) {
+  .hero-photo img { width: 150px; height:180px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .research-figure .media-link:hover img,.card-media:hover img { transform:none; }
+}
