@@ -3,29 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GeonHong Kim</title>
-  <meta name="description" content="GeonHong Kim — Undergraduate researcher in wearable & soft robotics, Human Robotics Lab, University of Ulsan.">
+  <meta name="description" content="GeonHong Kim is an undergraduate researcher at the University of Ulsan working on wearable robotics, soft robotics, mechanical design, sensing, and embedded control.">
   <meta name="theme-color" content="#2f8f4e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GeonHong Kim | Undergraduate Researcher">
+  <meta property="og:description" content="Wearable robotics, soft actuation, sensing, and embedded control — selected research and projects.">
+  <title>GeonHong Kim | Wearable &amp; Soft Robotics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- ============================================================
-     ✏️ 수정 가이드
-     - "[TODO] …" 텍스트와 class="ph" (placeholder) 박스는 직접 채우거나 지우세요.
-     - 프로필 사진: assets/profile.jpg 로 저장하면 자동 표시.
-     - 이미지 박스: <div class="ph ...">…</div> 를
-         <img src="assets/projects/파일명.jpg" alt=""> 로 교체.
-     - 섹션이 필요 없으면 <section> 블록과 nav 링크를 같이 지우세요.
-     ============================================================ -->
-
-<a class="skip" href="#about">Skip to content</a>
-
+<a class="skip" href="#about">Skip to main content</a>
 <header class="topbar">
-  <a class="brand" href="#top">GeonHong Kim<span class="dot">.</span></a>
-  <nav>
+  <a class="brand" href="#top" aria-label="GeonHong Kim, back to top">GeonHong Kim<span class="dot">.</span></a>
+  <nav aria-label="Main navigation">
     <a href="#about">About</a>
     <a href="#featured">Research</a>
     <a href="#projects">Projects</a>
@@ -33,262 +26,213 @@
     <a href="#experience">Experience</a>
     <a href="#awards">Awards</a>
     <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main id="top">
-
-  <!-- ===================== HERO ===================== -->
-  <section class="hero">
+  <!-- INTRO: Edit this text when your academic status or interests change. -->
+  <section class="hero" aria-labelledby="hero-title">
     <div class="hero-text">
       <p class="tagline">Wearable Robotics · Soft Robotics · Embedded Control</p>
-      <h1>GeonHong Kim<br><span class="kr">김건홍</span></h1>
-      <p class="lead">
-        Undergraduate researcher building <strong>wearable and soft robots</strong> that reduce
-        physical strain in shipyard work — from cable-driven upper-limb assistance to
-        pneumatic gloves for grip support and vibration damping.
-      </p>
-      <p class="affil">
-        B.S. student, Mechanical &amp; Automotive Engineering, University of Ulsan<br>
-        Undergraduate Researcher, <a href="#">Human Robotics Lab (HRlab)</a> <!-- ✏️ 연구실 홈페이지 링크 -->
-      </p>
+      <h1 id="hero-title">GeonHong Kim<br><span class="kr">김건홍</span></h1>
+      <p class="lead">Undergraduate researcher developing <strong>human-centered robotic systems</strong> through mechanical design, prototype fabrication, sensor integration, and embedded control.</p>
+      <p class="affil">Mechanical &amp; Automotive Engineering, University of Ulsan<br>
+        Undergraduate Researcher, Human Robotics Lab (HRlab)</p>
       <div class="actions">
-        <a class="btn primary" href="assets/GeonHong_Kim_CV.pdf">Curriculum Vitae</a> <!-- ✏️ assets/ 에 PDF 넣기 -->
-        <a class="btn" href="https://github.com/GeonHoong">GitHub</a>
+        <a class="btn primary" href="assets/GeonHong_Kim_CV.pdf" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a>
+        <a class="btn" href="https://github.com/GeonHoong" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         <a class="btn" href="mailto:kykbaby2@mail.ulsan.ac.kr">Email</a>
-        <a class="btn" href="#">LinkedIn</a> <!-- ✏️ 없으면 삭제 -->
       </div>
     </div>
     <div class="hero-photo">
-      <img src="assets/profile.jpg" alt="Portrait of GeonHong Kim"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="ph photo" style="display:none;"><span>Profile photo<br><code>assets/profile.jpg</code></span></div>
+      <!-- No portrait was included in the original ZIP. Replace the monogram with your own image later. -->
+      <div class="profile-monogram" role="img" aria-label="GeonHong Kim monogram">
+        <span class="profile-initials">GK</span><span class="profile-subtitle">ROBOTICS<br>RESEARCH</span>
+      </div>
     </div>
   </section>
 
-  <!-- ===================== ABOUT ===================== -->
   <section id="about">
     <div class="two-col">
       <div>
         <h2>About</h2>
-        <p>
-          I am a senior undergraduate at the University of Ulsan and a member of the
-          <strong>Human Robotics Lab</strong> led by Prof. Kyoung-Soub Lee. My work sits at the
-          intersection of <strong>mechanical design, soft actuation, and embedded control</strong>:
-          I design and fabricate wearable devices, build the electronics and firmware that drive
-          them, and measure how they change the load on the human body.
-        </p>
-        <p>
-          Much of my research is motivated by shipbuilding — overhead cable installation and
-          long hours with vibrating handheld tools — where a well-designed wearable can make a
-          real difference to workers.
-        </p>
-        <p class="todo">[TODO] 한두 문장 추가 — 장기 목표(대학원 진학, 관심 분야), 개인적인 동기 등.</p>
+        <p>I am an undergraduate researcher in the <strong>Human Robotics Lab</strong> at the University of Ulsan, advised by Prof. Kyoung-Soub Lee. My interests lie in <strong>wearable robotics, soft robotic mechanisms, human–robot interaction, and embedded control systems</strong>.</p>
+        <p>I design and prototype wearable devices by combining mechanical structures, electronic circuits, and sensor-based control. My current work includes cable-driven assistance for shipboard cable installation and pneumatic systems for reducing hand-transmitted tool vibration.</p>
+        <p>I plan to pursue graduate studies in wearable and soft robotics, focusing on mechanical design, sensing, and control. I am particularly interested in developing robotic systems that can be evaluated through hands-on prototyping and experimental measurement.</p>
       </div>
-      <aside class="side-card">
-        <h3>Currently</h3>
+      <aside class="side-card" aria-label="Current research and interests">
+        <h3>Current Work</h3>
         <ul>
-          <li>Developing a <strong>cable-driven wearable robot</strong> for shipboard cable installation (HRlab)</li>
-          <li>Leading a team on a <strong>soft grip-assist glove</strong> (BTS Research Program)</li>
-          <li>Preparing a patent on an <strong>active pneumatic vibration-damping glove</strong></li>
+          <li><strong>Cable-driven wearable robot</strong> for shipboard cable-installation assistance</li>
+          <li><strong>Soft robotic grip-assist glove</strong> for shipyard work</li>
+          <li><strong>Active pneumatic vibration-damping glove</strong> and related patent preparation</li>
         </ul>
-        <h3>Interests</h3>
-        <ul class="tags">
-          <li>Wearable Robotics</li><li>Soft Robotics</li><li>Mechanical Design</li>
-          <li>Embedded Control</li><li>Human-Robot Interaction</li>
-        </ul>
+        <h3>Research Interests</h3>
+        <ul class="tags"><li>Wearable Robotics</li><li>Soft Robotics</li><li>Mechanism Design</li><li>Sensing</li><li>Embedded Control</li><li>Human–Robot Interaction</li></ul>
       </aside>
     </div>
   </section>
 
-  <!-- ===================== NEWS ===================== -->
   <section id="news">
     <h2>News</h2>
     <ul class="news">
-      <li><time>Sep 2026</time><div>Manuscript on a wearable robot for shipboard cable installation submitted to <em>Transactions of the KSME A</em>.</div></li>
-      <li><time>Jun 2026</time><div>Started the InnoCORE Research Internship (University of Ulsan–UNIST) on pneumatic vibration damping.</div></li>
-      <li><time>May 2026</time><div>🏆 <strong>Outstanding Paper Award</strong> (poster), 2026 Spring Conference of the KSME Ulsan Branch.</div></li>
-      <li><time>Mar 2026</time><div>🏆 <strong>2nd Place</strong>, 1/10-scale division, 5th International Collegiate EV Autonomous Driving Competition.</div></li>
-      <li><time>Dec 2025</time><div>Joined the Human Robotics Lab as an undergraduate researcher.</div></li>
-      <!-- ✏️ 새 소식은 맨 위에 추가 -->
+      <li><time datetime="2026-09">Sep 2026</time><div>Submitted a manuscript on a wearable robot for shipboard cable installation to <em>Transactions of the KSME A</em>.</div></li>
+      <li><time datetime="2026-09">Sep 2026</time><div>Completed the InnoCORE Research Internship involving pneumatic air-chamber geometry and soft-actuator prototypes.</div></li>
+      <li><time datetime="2026-05">May 2026</time><div>Received an <strong>Outstanding Paper Award</strong> for a poster presentation at the KSME Ulsan Branch Spring Conference.</div></li>
+      <li><time datetime="2026-03">Mar 2026</time><div>Received an <strong>Excellence Award (2nd Place)</strong> in the 1/10-scale autonomous driving division.</div></li>
     </ul>
   </section>
 
-  <!-- ===================== FEATURED RESEARCH ===================== -->
   <section id="featured">
     <h2>Featured Research</h2>
-    <p class="section-intro">Two lines of work I am most invested in.</p>
-
-    <article class="feature">
+    <p class="section-intro">Selected research projects combining mechanical design, sensing, and embedded actuation. The diagrams below summarize the system architecture; they are not photographs or experimental results.</p>
+    <article class="feature" id="research-cable">
       <div class="feature-media">
-        <div class="ph wide"><span>Image / GIF<br><code>assets/research/cable-robot.jpg</code></span></div>
-        <!-- ✏️ <img src="assets/research/cable-robot.jpg" alt=""> -->
+        <div class="research-visual" role="img" aria-label="Cable-driven wearable robot concept: mechanical structure, CAN-controlled actuation, and wearable system integration">
+          <div class="visual-top"><span class="visual-index">01 / WEARABLE ACTUATION</span><span class="visual-mark">HRlab</span></div>
+          <div class="visual-name">CABLE-DRIVEN<br><span>ASSISTANCE</span></div>
+          <div class="system-flow">
+            <div class="flow-node"><small>DESIGN</small><strong>Mechanism<br>&amp; cable routing</strong></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-node"><small>CONTROL</small><strong>CAN motor<br>communication</strong></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-node"><small>INTEGRATION</small><strong>Wearable<br>prototype</strong></div>
+          </div>
+          <div class="visual-foot">Mechanical Design · Actuation · Embedded Control</div>
+        </div>
       </div>
       <div class="feature-body">
-        <p class="meta">HRlab, University of Ulsan · Dec 2025 – Present</p>
+        <p class="meta">Human Robotics Lab, University of Ulsan · Dec 2025 – Present</p>
         <h3>Cable-Driven Wearable Robot for Shipboard Cable Installation</h3>
-        <p>
-          Installing heavy cables overhead on a ship's deck is one of the most physically demanding
-          tasks in shipbuilding. I am developing a cable-driven wearable robot that supports the
-          upper limbs during this work, reducing muscular effort while keeping the device light
-          enough to wear through a shift.
-        </p>
-        <p class="role"><strong>My role</strong> — mechanical design, HW/SW integration, CAN-based motor communication and control.</p>
-        <p class="todo">[TODO] 결과 수치(예: 근전도 감소율, 무게), 사용한 모터/센서, 사진 2~3장 추가.</p>
-        <div class="links">
-          <a class="chip" href="#publications">Paper (submitted)</a>
-          <a class="chip" href="#">Poster</a> <!-- ✏️ -->
-          <a class="chip" href="#">Video</a>  <!-- ✏️ -->
-        </div>
+        <p>This ongoing project investigates a wearable assistive mechanism for upper-limb-intensive cable-installation tasks in shipbuilding. The system uses cable-driven actuation to provide pulling assistance while considering wearability and integration with the worker's movement.</p>
+        <p class="role"><strong>My contributions</strong> — wearable mechanism and control-box design, hardware/software integration, and CAN-based motor communication and control.</p>
+        <ul class="detail-list">
+          <li><strong>Mechanical:</strong> cable routing, pulley-based actuation layout, and wearable assembly design.</li>
+          <li><strong>Embedded:</strong> motor-controller integration and control testing via CAN communication.</li>
+          <li><strong>Current focus:</strong> system integration, usability-oriented mechanical refinement, and prototype validation.</li>
+        </ul>
+        <div class="links"><a class="chip" href="#paper-cable">Submitted manuscript</a><a class="chip" href="#poster-cable">Conference poster</a></div>
       </div>
     </article>
 
-    <article class="feature reverse">
+    <article class="feature reverse" id="research-glove">
       <div class="feature-media">
-        <div class="ph wide"><span>Image / GIF<br><code>assets/research/pneumatic-glove.jpg</code></span></div>
+        <div class="research-visual visual-pneumatic" role="img" aria-label="Pneumatic glove system: grip and vibration sensors, RMS-based processing, and controlled air chambers">
+          <div class="visual-top"><span class="visual-index">02 / SOFT ACTUATION</span><span class="visual-mark">HRlab + InnoCORE</span></div>
+          <div class="visual-name">PNEUMATIC<br><span>VIBRATION DAMPING</span></div>
+          <div class="system-flow">
+            <div class="flow-node"><small>SENSING</small><strong>Grip + IMU<br>signals</strong></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-node"><small>PROCESSING</small><strong>Vibration<br>RMS analysis</strong></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-node"><small>ACTUATION</small><strong>Pneumatic<br>air chambers</strong></div>
+          </div>
+          <div class="visual-foot">Sensors · Signal Processing · Air-Chamber Prototypes</div>
+        </div>
       </div>
       <div class="feature-body">
-        <p class="meta">HRlab &amp; InnoCORE Internship (UoU–UNIST) · Apr 2026 – Sep 2026</p>
+        <p class="meta">HRlab · Apr–Jun 2026 &nbsp;|&nbsp; InnoCORE, UoU–UNIST · Jun–Sep 2026</p>
         <h3>Active Pneumatic Vibration-Damping Glove</h3>
-        <p>
-          Hand-transmitted vibration from power tools is a long-term health hazard. I designed a
-          pneumatic glove whose air chambers adapt their pressure based on grip and vibration
-          sensing, then extended the work during the InnoCORE internship by studying chamber
-          geometry and fabricating Zero-volume Air Chamber (ZAC) and Dielectric Elastomer
-          Actuator (DEA) prototypes as alternative actuation mechanisms.
-        </p>
-        <p class="role"><strong>My role</strong> — glove prototyping, air-chamber fabrication, IMU-based vibration RMS analysis, pressure-sensor grip detection, embedded pneumatic actuation.</p>
-        <div class="links">
-          <a class="chip" href="#publications">Patent (in preparation)</a>
-          <a class="chip" href="#">Report</a> <!-- ✏️ -->
-        </div>
+        <p>I developed a pneumatic-glove prototype intended to reduce vibration transmitted between handheld tools and the user's hand. The prototype uses grip detection and IMU-based vibration analysis to inform air-chamber actuation.</p>
+        <p>During the InnoCORE internship, I separately explored pneumatic air-chamber geometry and fabricated <strong>Zero-volume Air Chamber (ZAC)</strong> and <strong>Dielectric Elastomer Actuator (DEA)</strong> prototypes to investigate alternative soft-actuation concepts.</p>
+        <p class="role"><strong>My contributions</strong> — glove and chamber fabrication, IMU vibration RMS processing, pressure-sensor-based grip detection, and embedded pneumatic control.</p>
+        <div class="links"><a class="chip" href="#patent-glove">Patent in preparation</a><a class="chip" href="#project-chamber">InnoCORE project</a></div>
       </div>
     </article>
   </section>
 
-  <!-- ===================== PROJECTS ===================== -->
   <section id="projects">
-    <h2>Projects</h2>
-
+    <h2>Selected Projects</h2>
+    <p class="section-intro">Additional research and competition projects. Contributions refer to my individual work or responsibilities on each team.</p>
     <h3 class="group">Research &amp; Development</h3>
     <div class="grid">
-      <article class="card">
-        <div class="ph card-img"><span>Image / GIF</span></div> <!-- ✏️ <img src="assets/projects/grip-glove.jpg" alt=""> -->
+      <article class="card" id="project-grip">
+        <div class="card-art art-grip" aria-hidden="true"><span class="art-kicker">RESEARCH / WEARABLE</span><strong>GRIP<br>ASSIST</strong><span class="art-foot">Soft Robotics &nbsp;·&nbsp; Motor Control</span></div>
         <div class="card-body">
-          <p class="meta">2026 BTS Research Program, UoU–UNIST · May 2026 – Present</p>
+          <p class="meta">BTS (Brain to Society) Research Program, UoU–UNIST · May 2026 – Present</p>
           <h4>Soft Robotic Grip-Assist Glove</h4>
-          <p>A wearable soft robotic glove that assists gripping during shipyard work.</p>
-          <p class="role"><strong>Role</strong> — Team leader; CAN-based motor communication and control.</p>
-          <ul class="tags small"><li>Soft Robotics</li><li>CAN</li><li>Motor Control</li></ul>
+          <p>Developing a soft wearable glove to assist gripping during shipyard work, with an emphasis on integrating actuation and controller hardware.</p>
+          <p class="role"><strong>My role</strong> — Acting team lead; CAN-based motor communication and control.</p>
+          <ul class="tags small"><li>Soft Robotics</li><li>CAN Communication</li><li>Motor Control</li></ul>
         </div>
       </article>
-
-      <article class="card">
-        <div class="ph card-img"><span>Image / GIF</span></div>
+      <article class="card" id="project-chamber">
+        <div class="card-art art-chamber" aria-hidden="true"><span class="art-kicker">RESEARCH / SOFT ACTUATOR</span><strong>AIR-CHAMBER<br>PROTOTYPING</strong><span class="art-foot">Pneumatics &nbsp;·&nbsp; Sensor Data</span></div>
         <div class="card-body">
-          <p class="meta">InnoCORE Research Internship · Jun – Sep 2026</p>
-          <h4>Pneumatic Air-Chamber Optimization for Vibration Damping</h4>
-          <p>Studied air-chamber designs for attenuating tool vibration; fabricated ZAC and DEA soft-actuator prototypes.</p>
-          <p class="role"><strong>Role</strong> — ZAC/DEA prototyping, chamber fabrication, IMU measurement, embedded pneumatics.</p>
-          <ul class="tags small"><li>Soft Actuators</li><li>Pneumatics</li><li>IMU</li></ul>
+          <p class="meta">InnoCORE Research Internship, UoU–UNIST · Jun–Sep 2026</p>
+          <h4>Air-Chamber Geometry for Vibration Attenuation</h4>
+          <p>Investigated pneumatic air-chamber configurations for hand–tool vibration attenuation and fabricated exploratory ZAC and DEA prototypes.</p>
+          <p class="role"><strong>My role</strong> — air-chamber/ZAC/DEA prototyping, IMU measurements, and embedded pneumatic actuation.</p>
+          <ul class="tags small"><li>Pneumatics</li><li>ZAC / DEA</li><li>IMU Sensing</li></ul>
         </div>
       </article>
     </div>
 
-    <h3 class="group">Competitions</h3>
+    <h3 class="group">Autonomous Driving Competitions</h3>
     <div class="grid">
       <article class="card">
-        <div class="ph card-img"><span>Image / GIF</span></div>
+        <div class="card-art art-vehicle" aria-hidden="true"><span class="art-kicker">COMPETITION / 2026</span><strong>1/10-SCALE<br>AUTONOMOUS</strong><span class="art-foot">ROS 2 &nbsp;·&nbsp; micro-ROS &nbsp;·&nbsp; LiDAR</span></div>
         <div class="card-body">
-          <p class="meta">5th Int'l Collegiate EV Autonomous Driving Competition · Jan – Mar 2026</p>
+          <p class="meta">5th International Collegiate EV Autonomous Driving Competition · Jan–Mar 2026</p>
           <h4>1/10-Scale Autonomous Mobility Race <span class="badge">2nd Place</span></h4>
-          <p>Built and integrated a 1/10-scale autonomous vehicle for competition driving tasks.</p>
-          <p class="role"><strong>Role</strong> — Team leader; chassis design, HW/SW integration, micro-ROS control, adaptive LiDAR ROI processing.</p>
-          <ul class="tags small"><li>micro-ROS</li><li>LiDAR</li><li>Autonomous Driving</li></ul>
+          <p>Built and integrated a 1/10-scale autonomous driving vehicle, combining chassis hardware, low-level actuation, and LiDAR-based perception for competition tasks.</p>
+          <p class="role"><strong>My role</strong> — Team leader; chassis design, HW/SW integration, micro-ROS control, and adaptive LiDAR region-of-interest processing.</p>
+          <ul class="tags small"><li>ROS 2</li><li>micro-ROS</li><li>LiDAR</li><li>System Integration</li></ul>
         </div>
       </article>
-
       <article class="card">
-        <div class="ph card-img"><span>Image / GIF</span></div>
+        <div class="card-art art-driving" aria-hidden="true"><span class="art-kicker">COMPETITION / 2025</span><strong>1/5-SCALE<br>PLATFORM</strong><span class="art-foot">OpenCR &nbsp;·&nbsp; Embedded Control</span></div>
         <div class="card-body">
-          <p class="meta">HL FMA 2025 aMAP Innovator Championship, HL Mando · Jul – Sep 2025</p>
+          <p class="meta">HL FMA 2025 aMAP Innovator Championship, HL Mando · Jul–Sep 2025</p>
           <h4>1/5-Scale Autonomous Driving Platform</h4>
-          <p>Developed hardware and embedded control functions for a 1/5-scale autonomous driving platform.</p>
-          <p class="role"><strong>Role</strong> — Hardware design, OpenCR-based control, LiDAR sensing and control.</p>
-          <ul class="tags small"><li>OpenCR</li><li>LiDAR</li><li>Embedded</li></ul>
+          <p>Developed hardware and embedded control functions for a scaled autonomous driving platform.</p>
+          <p class="role"><strong>My role</strong> — hardware design, OpenCR-based control, and LiDAR sensing and control.</p>
+          <ul class="tags small"><li>OpenCR</li><li>LiDAR</li><li>Hardware Design</li></ul>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- ===================== PUBLICATIONS ===================== -->
   <section id="publications">
     <h2>Publications &amp; Patents</h2>
-
+    <p class="section-intro">Manuscript and intellectual-property statuses are shown explicitly; no unpublished paper or patent text is linked.</p>
     <h3 class="group">2026</h3>
-
-    <div class="pub">
-      <div class="ph thumb"><span>Figure</span></div> <!-- ✏️ <img src="assets/pubs/ksme-a.png" alt=""> -->
+    <div class="pub" id="paper-cable">
+      <div class="pub-marker marker-paper" aria-hidden="true"><span>01</span><strong>PAPER</strong></div>
       <div class="pub-body">
         <p class="pub-title">Design of a Wearable Robot for Assisting Cable Installation Tasks in the On-Deck Area of Ships</p>
         <p class="pub-authors"><strong>GeonHong Kim</strong>, ChanYong Jung, Kyoung-Soub Lee</p>
-        <p class="pub-venue"><em>Transactions of the KSME A</em> · Submitted, Sep 2026</p>
-        <div class="links"><a class="chip" href="#">Paper</a><a class="chip" href="#">Video</a></div>
+        <p class="pub-venue"><em>Transactions of the KSME A</em> · Manuscript submitted, Sep 2026</p>
       </div>
     </div>
-
-    <div class="pub">
-      <div class="ph thumb"><span>Poster</span></div>
+    <div class="pub" id="poster-cable">
+      <div class="pub-marker marker-poster" aria-hidden="true"><span>02</span><strong>POSTER</strong></div>
       <div class="pub-body">
         <p class="pub-title">Design of a Wearable Robot for Assisting Cable Installation Tasks in the On-Deck Area of Ships</p>
         <p class="pub-authors"><strong>GeonHong Kim</strong>, ChanYong Jung, Kyoung-Soub Lee</p>
-        <p class="pub-venue">2026 Spring Conference of the KSME Ulsan Branch · Poster, May 2026 · <span class="badge">Outstanding Paper Award</span></p>
-        <div class="links"><a class="chip" href="#">Poster</a></div>
+        <p class="pub-venue">2026 Spring Conference of the KSME Ulsan Branch · Poster presentation, May 2026 <span class="badge">Outstanding Paper Award</span></p>
       </div>
     </div>
-
-    <div class="pub">
-      <div class="ph thumb"><span>Figure</span></div>
+    <div class="pub" id="patent-glove">
+      <div class="pub-marker marker-patent" aria-hidden="true"><span>03</span><strong>PATENT</strong></div>
       <div class="pub-body">
         <p class="pub-title">Active Pneumatic Vibration-Damping Glove</p>
         <p class="pub-authors"><strong>GeonHong Kim</strong>, Kyoung-Soub Lee</p>
-        <p class="pub-venue">Korean patent application · In preparation, 2026 <span class="todo">[TODO] 출원번호</span></p>
+        <p class="pub-venue">Korean patent · In preparation, 2026 (not yet filed)</p>
       </div>
     </div>
   </section>
 
-  <!-- ===================== EXPERIENCE & EDUCATION ===================== -->
   <section id="experience">
     <h2>Experience &amp; Education</h2>
     <ol class="timeline">
-      <li>
-        <time>Jun 2026 – Sep 2026</time>
-        <div>
-          <h4>Research Intern · InnoCORE Research Internship Program</h4>
-          <p class="meta">University of Ulsan – UNIST</p>
-          <p>Investigated pneumatic air-chamber geometry for attenuating hand-transmitted tool vibration.</p>
-        </div>
-      </li>
-      <li>
-        <time>Dec 2025 – Present</time>
-        <div>
-          <h4>Undergraduate Researcher · Human Robotics Lab</h4>
-          <p class="meta">Dept. of Mechanical and Automotive Engineering, University of Ulsan</p>
-          <p>Designing and prototyping wearable robotic systems (mechanical components and electronic circuits) and conducting sensor data acquisition.</p>
-        </div>
-      </li>
-      <li>
-        <time>Mar 2022 – Present</time>
-        <div>
-          <h4>B.S. in Mechanical and Automotive Engineering</h4>
-          <p class="meta">University of Ulsan · GPA 3.71 / 4.50 · Expected <span class="todo">[TODO] Feb 2027</span></p>
-          <p class="todo">[TODO] 관련 수강 과목(로봇공학, 제어공학, 메카트로닉스 등) 몇 개 나열.</p>
-        </div>
-      </li>
+      <li><time>Jun–Sep 2026</time><div><h4>Research Intern · InnoCORE Research Internship Program</h4><p class="meta">University of Ulsan – UNIST</p><p>Investigated pneumatic air-chamber geometry for attenuating hand-transmitted tool vibration; fabricated soft-actuator prototypes and acquired IMU vibration data.</p></div></li>
+      <li><time>Dec 2025 – Present</time><div><h4>Undergraduate Researcher · Human Robotics Lab</h4><p class="meta">Department of Mechanical and Automotive Engineering, University of Ulsan</p><p>Designing and prototyping wearable robotic systems, including mechanical components and electronic circuits, and collecting sensor data for evaluation.</p></div></li>
+      <li><time>Mar 2022 – Present</time><div><h4>Undergraduate Student · Mechanical and Automotive Engineering</h4><p class="meta">University of Ulsan · GPA 3.71 / 4.50</p><p>B.S. undergraduate program.</p></div></li>
     </ol>
   </section>
 
-  <!-- ===================== AWARDS ===================== -->
   <section id="awards">
     <h2>Awards &amp; Honors</h2>
     <ul class="list">
@@ -297,35 +241,24 @@
     </ul>
   </section>
 
-  <!-- ===================== SKILLS ===================== -->
   <section id="skills">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <div class="skills">
-      <div><h4>CAD / Fabrication</h4><ul class="tags"><li>Inventor</li><li>Fusion 360</li><li>3D Printing</li><li>Silicone Fabrication</li></ul></div>
-      <div><h4>Embedded / Control</h4><ul class="tags"><li>Raspberry Pi</li><li>ESP32</li><li>OpenCR</li><li>CAN Motor FOC Control</li></ul></div>
+      <div><h4>CAD &amp; Fabrication</h4><ul class="tags"><li>Autodesk Inventor</li><li>Fusion 360</li><li>3D Printing</li><li>Silicone Fabrication</li></ul></div>
+      <div><h4>Embedded &amp; Control</h4><ul class="tags"><li>ESP32</li><li>Raspberry Pi</li><li>OpenCR</li><li>CAN Communication</li><li>Motor Control</li></ul></div>
       <div><h4>Robotics Software</h4><ul class="tags"><li>ROS 2</li><li>micro-ROS</li><li>Python</li><li>C++</li></ul></div>
-      <div><h4>Vision</h4><ul class="tags"><li>YOLO</li><li>OpenCV</li></ul></div>
+      <div><h4>Sensing &amp; Data</h4><ul class="tags"><li>IMU</li><li>Pressure Sensors</li><li>Vibration RMS Analysis</li><li>LiDAR</li></ul></div>
+      <div><h4>Computer Vision</h4><ul class="tags"><li>OpenCV</li><li>YOLO</li></ul></div>
     </div>
-    <p class="meta cert">Certification — Craftsman 3D Printer Operator (National Technical Qualification), HRD Korea, 2022</p>
+    <p class="meta cert"><strong>Certification:</strong> Craftsman 3D Printer Operator (National Technical Qualification), HRD Korea, 2022</p>
   </section>
-
-  <!-- ===================== GALLERY ===================== -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <figure><div class="ph"><span>Photo</span></div><figcaption>[TODO] caption</figcaption></figure>
-      <figure><div class="ph"><span>Photo</span></div><figcaption>[TODO] caption</figcaption></figure>
-      <figure><div class="ph"><span>Photo</span></div><figcaption>[TODO] caption</figcaption></figure>
-      <figure><div class="ph"><span>Photo</span></div><figcaption>[TODO] caption</figcaption></figure>
-    </div>
-  </section>
-
 </main>
 
-<footer>
+<footer id="contact">
+  <h2>Contact</h2>
+  <p>Interested in wearable robotics, soft actuation, and embedded control research.</p>
   <p><strong>GeonHong Kim</strong> · <a href="mailto:kykbaby2@mail.ulsan.ac.kr">kykbaby2@mail.ulsan.ac.kr</a> · Ulsan, Republic of Korea</p>
-  <p class="meta">Last updated Nov 2026 · Built with plain HTML &amp; CSS · <a href="#top">Back to top ↑</a></p>
+  <p class="meta">Last updated Nov 2026 · <a href="https://github.com/GeonHoong" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="#top">Back to top ↑</a></p>
 </footer>
-
 </body>
 </html>
