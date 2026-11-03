@@ -361,6 +361,33 @@ footer { margin-top:1rem; }
 .image-preview-close { padding: 7px 12px; background: #f2f6f2; color: #145b32; border-radius: 8px; border: 1px solid #cedcd0; font: inherit; cursor: pointer; }
 .image-preview-dialog img { display: block; width: auto; height: auto; max-width: 95vw; max-height: calc(96vh - 62px); object-fit: contain; margin: auto; }
 @media(max-width:600px) { .image-preview-dialog { max-width: 98vw; } }
+
+/* Project documentation links */
+.project-repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  margin-top: 1rem;
+  padding: .48rem .78rem;
+  border: 1px solid var(--accent, #2f8f4e);
+  border-radius: 8px;
+  color: var(--accent-dark, #22703c);
+  background: var(--accent-soft, #e6f4ea);
+  font-size: .85rem;
+  font-weight: 650;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: background .18s ease, transform .18s ease;
+}
+.project-repo-link:hover,
+.project-repo-link:focus-visible {
+  color: #fff;
+  background: var(--accent, #2f8f4e);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.project-repo-link:focus-visible { outline: 2px solid var(--accent-dark, #22703c); outline-offset: 2px; }
+
 </style>
 </head>
 <body>
@@ -513,6 +540,7 @@ footer { margin-top:1rem; }
           <p>Built and integrated a 1/10-scale autonomous driving vehicle, combining chassis hardware, low-level actuation, and LiDAR-based perception for competition tasks.</p>
           <p class="role"><strong>My role</strong> — Team leader; chassis design, HW/SW integration, micro-ROS control, and adaptive LiDAR region-of-interest processing.</p>
           <ul class="tags small"><li>ROS 2</li><li>micro-ROS</li><li>LiDAR</li><li>System Integration</li></ul>
+<a class="project-repo-link" href="https://github.com/GeonHoong/1_10-autonomous-race" target="_blank" rel="noopener noreferrer" aria-label="View 1/10-Scale Autonomous Mobility Race project details on GitHub">View project on GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </article>
       <article class="card">
@@ -523,6 +551,7 @@ footer { margin-top:1rem; }
           <p>Developed hardware and embedded control functions for a scaled autonomous driving platform.</p>
           <p class="role"><strong>My role</strong> — hardware design, OpenCR-based control, and LiDAR sensing and control.</p>
           <ul class="tags small"><li>OpenCR</li><li>LiDAR</li><li>Hardware Design</li></ul>
+<a class="project-repo-link" href="https://github.com/GeonHoong/1-5-autonomous" target="_blank" rel="noopener noreferrer" aria-label="View 1/5-Scale Autonomous Driving Platform project details on GitHub">View project on GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </article>
     </div>
